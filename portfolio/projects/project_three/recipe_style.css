@@ -1,0 +1,58 @@
+
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "ingredients instructions"
+    "ingredients image"
+    "ingredients nutrition"
+    ;
+}
+
+.ingredients {
+    grid-area: ingredients;
+    background-color: #ddd;
+}
+
+.instructions{
+    grid-area: instructions;
+}
+
+.image {
+    grid-area: image;
+}
+
+.nutrition {
+    grid-area: nutrition;
+}
+
+/*Nutritional Information Formatting*/
+
+.nutrition ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nutrition ul li {
+    border: 1px solid #000;
+    margin: 5px;
+    display: inline-block;
+}
+
+.nutrition ul span {
+    display: block;
+    padding: 1rem;
+    border-top: 1px solid #589;
+    text-align: center;
+}
+
+.nutrition ul li span:nth-of-type(1) {
+    background: #ddd;
+}
+
+

@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+
+/*
+font-family: 'Ribeye', serif;
+font-family: 'Ribeye Marrow', serif;
+*/
+
+* { box-sizing: border-box;
+
+} 
+
+header {
+    background-image: url(images/banner.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: 0px;
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 550px;
+        color: #fff;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+main section {
+    flex: 0 1 33%;
+}
+
+main section img {
+    max-width: 100%;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+     display: inline-block;
+     display: flex;
+  }
+  
+  nav li {
+    margin: 1px;
+  }
+  
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    background: #b8b5aa;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    color: #000;
+    background: #ffa500;
+  }
